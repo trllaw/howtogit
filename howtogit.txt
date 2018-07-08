@@ -14,8 +14,35 @@ git commit -a
 	-mistura o comando git commit  e o git add -A so que sem os untreckeds onde ele vai adicionar para o comit todos os arquivos modificados
 git log
 	- lista as modificações que foram feitas
+git log --graph --all --abrev-commit -- decorate --oneline
+	
 git show <hash_de_um_commit>
 	-mostrara o commit detalhadamente, a documentação dele e o que foi modificado e aonde
 git show <nome_do_arquivo>
-	- 
+	-mostra as modificações feitas naquele arquivo no commit atual
+git checkout <hash_ de um commit>
+	-muda o ponteiro head para um commit identificado pela hash, lembrando que moda o estado do projeto para o estado que estava naquele momento do commit
+git branch<nome da branch a ser criada>
+	-cria uma branch com aquele nome
+git checkout <nome da brunch>
+	-muda a head para a branch passada por parametro
+git branch - d <nome da  branche a ser deletada>
+	-deleta a branch
+git merge <nome da merge que vc vai pegar as alterações>
+	cria um novo commit que vai ser o merge do commit atual e do apontado pela branch passada por parametro e pega o branch atual e aponta para esse novo commit
+git merge <hash de um commit>
+	cria um novo comit que vai ser o merge do commit atual e do commit identificado pela hash do parametro e pega o branch atual e aponta para esse novo commit
+===================SE DEU UM COMFLITO==================================================
+para escolher entre a versãod e um arquivo de uma branch ou de  outra usar:
+git checkout --theirs<nome do arquivo>
+	ignoras a versão da head e pega a versão do comit que esta sendo mergeado
+git checkout --our<nome do arquivo>
+	ignora a versão do commit mergeado e pega a versão do head( lembrando ainda tem que dargit add e commit dos arquivosmodificados para terminar o merge)
+se quiser criar uma versão intermediaria do merge tera que abrir o arquivo que esta ra com os conflitos delimitados por
+head <<<<<<
+<trecho do codigo que esta na head>
+=====================================
+<trecho do codigo que estava no commit mergeado>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+===================================================================
 
