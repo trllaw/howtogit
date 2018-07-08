@@ -14,4 +14,8 @@ git commit -a
 	-mistura o comando git commit  e o git add -A so que sem os untreckeds onde ele vai adicionar para o comit todos os arquivos modificados
 git log
 	- lista as modificações que foram feitas
+git show <hash_de_um_commit>
+	-mostrara o commit detalhadamente, a documentação dele e o que foi modificado e aonde
+git show <nome_do_arquivo>
+	- 
 
