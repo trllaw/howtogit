@@ -10,8 +10,8 @@ git commit
 	- ele cria um commit que é um save do seu projeto, o save é baseado em todos os arquivos  que voce adicionou ao commit usando o "git add xxxx", NOTA: ele abre o VIM para voce editar a documentação do commit
 git commit -m "<documentação do commit>"
 	- faz o commit  sem abrir o editor de texto, passar a documentação entre aspas depois do -m
-git commit -A
-	-mistura o comando git commit -m e o git add -A
+git commit -a
+	-mistura o comando git commit  e o git add -A so que sem os untreckeds onde ele vai adicionar para o comit todos os arquivos modificados
 git log
 	- lista as modificações que foram feitas
 
