@@ -1,2 +1,10 @@
-asdasd
-
+git init
+	- Iniciar o git em uma pasta
+git status
+	- lista arquivos modificados, untrackeds , adicionados para o commit, adicionados para ser commitados, a brunch atual
+git add <caminho_para_o_arquivo/nome_do_arquivo>
+	- adiciona um arquivo que foi modificado para o commit que esta sendo preparado, tambem adiciona arquivos untrackeds para o commit
+git commit
+	- ele cria um commit que é um save do seu projeto, o save é baseado em todos os arquivos  que voce adicionou ao commit usando o "git add xxxx", NOTA: ele abre o VIM para voce editar a documentação do commit
+git log
+	- lista as modificações que foram feitas
